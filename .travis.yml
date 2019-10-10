@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t COPIEDTAG -f Dockerfile.dev .
+  - docker build -t copiedtag -f Dockerfile.dev .
 
 script:
-  - docker run COPIEDTAG npm run test -- --coverage
+  - docker run copiedtag npm run test -- --coverage
